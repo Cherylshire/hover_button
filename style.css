@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  text-align: center;
+}
+.btn {
+  border: 4px solid;
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+}
+.btn1, .btn5 {
+  color: #facb38;
+}
+.btn2, .btn6 {
+  color: #1b6cb1;
+}
+.btn3, .btn7 {
+  color: #7a1214;
+}
+.btn4, .btn8 {
+  color: #27722e;
+}
+.btn1:hover, .btn5:hover {
+  color: #000000;
+}
+.btn2:hover, .btn6:hover {
+  color: #444555;
+}
+.btn3:hover, .btn7:hover {
+  color: #eabd2a;
+}
+.btn4:hover, .btn8:hover {
+  color: #a1a8b2;
+}
+
+.btn1::hover, .btn3::hover, .btn5::hover, .btn7::hover {
+  top: 0;
+  border-radius: 0 0 50% 50%;
+  height: 180%;
+}
+.btn2::hover, .btn4::hover, .btn6::hover, .btn8::hover {
+  top: 0;
+  border-radius: 50% 50% 0 0;
+  height: 180%;
+}
+

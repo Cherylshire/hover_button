@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Button</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div>
+      <button class="btn btn1">Hufflepuff</button>
+      <button class="btn btn2">Ravenclaw</button>
+      <button class="btn btn3">Gryffindor</button>
+      <button class="btn btn4">Slytherin</button>
+    </div>
+    <div>
+      <button class="btn btn5">Badgers</button>
+      <button class="btn btn6">Eagle</button>
+      <button class="btn btn7">Lion</button>
+      <button class="btn btn8">Snake</button>
+    </div>
+    <div>
+      <canvas id="gc" width="400" height="400"></canvas>
+      <script>
+      window.onload=function() {
+        canv=document.getElementById("gc");
+        ctx=canv.getContext("2d");
+
+        ctx.fillStyle="#a1a8b2";
+        ctx.fillRect(0,0,400,400);
+
+        ctx.fillStyle="#eabd2a";
+        ctx.fillRect(0,0,300,400);
+
+        ctx.fillStyle="#444555";
+        ctx.fillRect(0,0,200,400);
+
+        ctx.fillStyle="#000000";
+        ctx.fillRect(0,0,100,400);
+
+
+        ctx.fillStyle="#27722e";
+        ctx.fillRect(0,0,400,200);
+
+        ctx.fillStyle="#7a1214";
+        ctx.fillRect(0,0,300,200);
+
+        ctx.fillStyle="#1b6cb1";
+        ctx.fillRect(0,0,200,200);
+
+        ctx.fillStyle="#facb38";
+        ctx.fillRect(0,0,100,200);
+      }
+      </script>
+    </div>
+  </div> 
+</body>
+</html>
