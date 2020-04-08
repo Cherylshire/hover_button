@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScript on HTML</title>
+	</head>
+	<body>
+		<h1><buttom onclick="ClickMe('Pass the x value')">Click me!</buttom></h1>
+		<br><br>
+		<h1><buttom onclick="ClickHere('<strong>html make this part bold!!</strong>')">Click Here!</buttom></h1>
+
+		<div id="changeme">
+			
+		</div>
+		<script>
+			function ClickMe(x) {
+			alert("This webpage was formed by JavaScript on HTML. " + x);	
+			alert("Function complete, Next function.");
+			}
+
+			function ClickHere(x) {
+				document.getElementById('changeme').innerHTML = "Many popular websites and webpage like Gmail used JavaScript and html5 to create and formed. Don't forget the semicolon at the end of each line. " + x;
+			}
+		</script>
+	</body>
+</html>
