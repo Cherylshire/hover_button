@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Current Time</title>
+    <style type="text/css">
+        .b{
+            font-size:25px;
+            color:#FF0000;
+            text-align:center;
+            font-weight:bolder;
+            display:block;
+            margin-top:10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <script type="text/javascript">
+        function f1(){
+            date = new Date();
+            var year = date.getFullYear();
+            var month = date.getMonth() + 1;
+            var day = date.getDay();
+            var hours = date.getHours();
+            var minutes = date.getMinutes();
+            var seconds = date.getSeconds();
+            var week;
+            var hour;
+            switch (day) {
+                case 1:
+                    week="Monday 星期一";
+                    break;
+                case 2:
+                    week="Tuesday 星期二";
+                    break;
+                case 3:
+                    week="Wednesday 星期三";
+                    break;
+                case 4:
+                    week="Thursday 星期四";
+                    break;
+                case 5:
+                    week="Friday 星期五";
+                    break;
+                case 6:
+                    week="Satursday 星期六";
+                    break;  
+                default:
+                    week="Sunday 星期日";
+                    break;
+            }
+            if(hours>12)
+                hour = "PM 下午" + f1(hours-12);
+            else
+                hour = "AM 上午" + f1(hours);
+            function f1(str){
+                if(str<10)
+                    return "0"+str;
+                else
+                    return  str;
+            }
+            text ="<font class='b'>"+"當前時間是："+year+"year 年"+f1(month)+"month 月"+f1(week)+hour+"："
+                    +f1(minutes)+"："+f1(seconds)+"</font>";
+            p1.innerHTML = text;
+        }
+        setInterval(f1,1000);
+    </script>
+    <p id="p1">asda</p>
+</body>
+</html>
+Citation: https://blog.csdn.net/weixin_40693841/java/article/details/83477920
