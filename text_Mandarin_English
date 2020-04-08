@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ABC</title>
+
+ 
+<style type="text/css">
+  h1{
+    color: white;
+  	background-color: navy;
+  	text-align:center;
+  	padding:18px;
+  	}
+  img{
+    float:left;
+    border: 2px  #9922cc dashed;
+  	margin: 5px;
+  	width:50% ;
+  	height:auto;
+  	}
+    p{
+    font-size:15px;
+    text-indent:2em;
+  	line-height:1.5;
+  	padding:5px;
+    }
+ body{
+    margin:0px;
+  	background-color:#ccccff;
+     }
+ #p1{
+    border-right:3px red double ;
+  	}
+ #p2{
+    border-right:3px  orange double;
+	  }
+</style>
+</head>
+<body>
+  <h1>Mandarin and English</h1>
+  <img src="" >
+  <p id="p1"> English is very different from Mandarin.</p>
+  
+  <p id="p2"> The Chinese languages has many dialects, in different part of China and around the world, there are hundreds of different dialects that belongs to Chinese, Mandarin is the most well known dialects and language to be used in East Asia. </p>
+
+  <p>零0,一1,二2,三3,四4,五5,六6,七7,八8,九9,十10,山mountain,海sea,洋ocean,象elephant,龜turtle,虎tiger,雞chicken,豬pig,上up/above,中middle/center,下low/below,卡stuck,左left,右right,前front,後back.</p>
+</body>
+ 
+
+Citation: https://blog.csdn.net/iostream992/java/article/details/83052647
