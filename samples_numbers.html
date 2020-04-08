@@ -1,0 +1,92 @@
+<!-- .slice -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to extract the second and the third elements from the array.</p>
+
+<h1><buton onclick="myFunction()">Click this</buton></h1>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango", "Cherry", "Strawberry", "Grape","Nectarine", "Pomegranate"];
+  var citrus = fruits.slice(0, 5);
+  document.getElementById("demo").innerHTML = citrus;
+}
+</script>
+
+</body>
+</html>
+
+<!-- .shift -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to remove the first element of the array, one at a time.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango", "Cherry", "Strawberry", "Grape","Nectarine", "Pomegranate"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+  fruits.shift();
+  document.getElementById("demo").innerHTML = fruits;
+}
+</script>
+
+</body>
+</html>
+
+<!-- .getFullYear .getMonth .getDate .... -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript getFullYear()</h2>
+
+<p>The getFullYear() method returns the full year, month and date:</p>
+
+<p id="demo"></p>
+
+<script>
+var d = new Date();
+var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+document.getElementById("demo").innerHTML = d.getFullYear();
+document.getElementById("demo").innerHTML = months[d.getMonth()];
+document.getElementById("demo").innerHTML = d.getDate();
+document.getElementById("demo").innerHTML = d.getHours();
+document.getElementById("demo").innerHTML = d.getMinutes();
+document.getElementById("demo").innerHTML = d.getSeconds();
+document.getElementById("demo").innerHTML = d.getMilliseconds();
+document.getElementById("demo").innerHTML = days[d.getDay()];
+
+</script>
+</body>
+</html>
+
+<!-- date and time -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+
+<p id="demo"></p>
+
+</body>
+</html>
+
+
+
